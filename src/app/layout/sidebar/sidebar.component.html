@@ -1,0 +1,94 @@
+<div>
+  <!-- Left Sidebar -->
+  <aside id="leftsidebar" class="sidebar" (mouseenter)="mouseHover()" (mouseleave)="mouseOut()">
+    <div class="navbar-header">
+      <ul class="nav navbar-nav flex-row">
+        <li class="nav-item logo">
+          <a class="navbar-brand" routerLink="dashboard/dashboard1">
+            <img src="assets/images/logo.png" alt="" />
+            <span class="logo-name">starry</span>
+          </a>
+        </li>
+        <li class="nav-item nav-toggle">
+          <button mat-icon-button (click)="callSidemenuCollapse()" class="sidemenu-collapse">
+            <mat-icon [ngStyle]="{'color':'#8F8C91'}" class="menuIcon">{{menuIcon}}</mat-icon>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- Menu -->
+    <div class="menu">
+      <ng-scrollbar [style.height]="listMaxHeight + 'px'" visibility="hover">
+        <ul class="list">
+          <!-- Top Most level menu -->
+          @for (sidebarItem of sidebarItems; track sidebarItem) {
+            <li
+              [routerLinkActive]="sidebarItem.submenu.length !== 0 ? 'active' : 'active-top'">
+              @if (sidebarItem.groupTitle === true) {
+                <div class="header">{{sidebarItem.title | translate}}</div>
+              }
+              @if (!sidebarItem.groupTitle;) {
+                <a [routerLink]="sidebarItem.class === '' ? [sidebarItem.path] : null"
+                  [ngClass]="[sidebarItem.class]" (click)="callToggleMenu($event, sidebarItem.submenu.length)"
+                  class="menu-top">
+                  <i-feather [name]="sidebarItem.icon" class="sidebarIcon"></i-feather>
+                  <span class="hide-menu">{{sidebarItem.title | translate}}
+                  </span>
+                  @if (sidebarItem.badge !== '' ) {
+                    <span [ngClass]="[sidebarItem.badgeClass]">{{sidebarItem.badge}}</span>
+                  }
+                </a>
+              }
+              <!-- First level menu -->
+              @if (sidebarItem.submenu.length > 0) {
+                <ul class="ml-menu">
+                  @for (sidebarSubItem1 of sidebarItem.submenu; track sidebarSubItem1) {
+                    <li
+                      [routerLinkActive]="sidebarSubItem1.submenu.length > 0 ? '' : 'active'">
+                      <a [routerLink]="sidebarSubItem1.submenu.length > 0 ? null : [sidebarSubItem1.path]"
+                        (click)="callToggleMenu($event,sidebarSubItem1.submenu.length)" [ngClass]="[sidebarSubItem1.class]">
+                        {{sidebarSubItem1.title | translate}}
+                      </a>
+                      <!-- Second level menu -->
+                      @if (sidebarSubItem1.submenu.length > 0) {
+                        <ul class="ml-menu-2">
+                          @for (sidebarSubItem2 of sidebarSubItem1.submenu; track sidebarSubItem2) {
+                            <li
+                              [routerLinkActive]="sidebarSubItem2.submenu.length > 0 ? '' : 'active'">
+                              <a [routerLink]="sidebarSubItem2.submenu.length > 0 ? null : [sidebarSubItem2.path]"
+                                (click)="callToggleMenu($event,sidebarSubItem2.submenu.length)"
+                                [ngClass]="[sidebarSubItem2.class]">
+                                {{sidebarSubItem2.title | translate}}
+                              </a>
+                              <!-- Third level menu -->
+                              @if (sidebarSubItem2.submenu.length > 0) {
+                                <ul class="ml-menu-3">
+                                  @for (sidebarSubItem3 of sidebarSubItem2.submenu; track sidebarSubItem3) {
+                                    <li
+                                      [routerLinkActive]="sidebarSubItem3.submenu.length > 0 ? '' : 'active'">
+                                      <a [routerLink]="sidebarSubItem3.submenu.length > 0 ? null : [sidebarSubItem3.path]"
+                                        (click)="callToggleMenu($event,sidebarSubItem3.submenu.length)"
+                                        [ngClass]="[sidebarSubItem3.class]">
+                                        {{sidebarSubItem3.title | translate}}
+                                      </a>
+                                    </li>
+                                  }
+                                </ul>
+                              }
+                            </li>
+                          }
+                        </ul>
+                      }
+                    </li>
+                  }
+                </ul>
+              }
+            </li>
+          }
+        </ul>
+      </ng-scrollbar>
+    </div>
+    <!-- #Menu -->
+  </aside>
+  <!-- #END# Left Sidebar -->
+</div>
