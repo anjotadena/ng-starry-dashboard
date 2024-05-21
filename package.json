@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "ghpages": "ng build --configuration production --output-path docs --base-href \"https://anjotadena.github.io/ng-starry-dashboard/\""
   },
   "private": true,
   "dependencies": {
