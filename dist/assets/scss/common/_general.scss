@@ -1,4 +1,6 @@
-﻿@use "mixins" as *;
+﻿
+
+@use "mixins" as *;
 
 body {
   @include transition(all 0.5s);
