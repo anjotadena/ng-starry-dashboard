@@ -1,9 +1,4 @@
-﻿/*
- *  Document   : _dialogs.scss
- *  Author     : RedStar Template
- *  Description: This scss file for dialogs style classes
- */
-.sweet-alert {
+﻿.sweet-alert {
   @include border-radius(0 !important);
 
   p {

@@ -1,8 +1,4 @@
-﻿/*
- *  Document   : theme-blue.scss
- *  Author     : RedStar Template
- *  Description: This scss file for blue theme style classes
- */
+﻿
 @use "_theme-color-variables";
 
 .theme-blue {
@@ -176,6 +172,7 @@
     border-bottom: 2px solid theme-color-variables.$theme-blue;
   }
 }
+/*Logo Header Background Color*/
 /*Logo Header Background Color*/
 .logo-blue {
   .navbar-header {

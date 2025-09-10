@@ -1,8 +1,4 @@
-﻿/*
- *  Document   : theme-white.scss
- *  Author     : RedStar Template
- *  Description: This scss file for white theme style classes
- */
+﻿
 @use "_theme-color-variables";
 
 .theme-white {
@@ -219,6 +215,7 @@
     color: #000;
   }
 }
+/*Logo Header Background Color*/
 /*Logo Header Background Color*/
 .logo-white {
   .navbar-header {

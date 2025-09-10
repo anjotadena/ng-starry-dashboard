@@ -1,8 +1,4 @@
-﻿/*
- *  Document   : _preloaders.scss
- *  Author     : RedStar Template
- *  Description: This scss file for preloaders style classes
- */
+﻿
 .md-preloader {
   @each $key, $val in $colors {
     .pl-#{$key} {

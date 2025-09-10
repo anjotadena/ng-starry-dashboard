@@ -1,8 +1,4 @@
-﻿/*
- *  Document   : _media.scss
- *  Author     : RedStar Template
- *  Description: This scss file for media queries classes
- */
+﻿
 
 @media (min-width: 1281px) {
   .navbar-header {
@@ -43,7 +39,6 @@
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
-*/
 @media (min-width: 1025px) and (max-width: 1280px) {
   .navbar-header {
     float: left;
@@ -81,7 +76,6 @@
 /* 
   ##Device = Tablets, Ipads 
   ##Screen = B/w 768px to 1024px
-*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
   section.content {
@@ -148,7 +142,6 @@
 /* 
   ##Device = Low Resolution Tablets, Mobiles 
   ##Screen = B/w 481px to 767px
-*/
 
 @media (min-width: 481px) and (max-width: 767px) {
   section.content {
@@ -203,7 +196,6 @@
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
-*/
 
 @media (min-width: 320px) and (max-width: 480px) {
   section.content {

@@ -1,9 +1,4 @@
-﻿/*
- *  Document   : _infobox.scss
- *  Author     : RedStar Template
- *  Description: This scss file for info box style classes
- */
-@use "../common/variables" as v;
+﻿@use "../common/variables" as v;
 @use "../common/mixins" as m;
 .info-box {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);

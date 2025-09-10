@@ -1,8 +1,5 @@
-﻿/*
- *  Document   : _charts.scss
- *  Author     : RedStar Template
- *  Description: This scss file for all charts style classes
- */
+﻿
+/* Morris */
 /* Morris */
 .morris-hover {
   &.morris-default-style {
@@ -10,6 +7,7 @@
   }
 }
 
+/* Flot */
 /* Flot */
 .flot-chart {
   width: 100%;
@@ -38,6 +36,7 @@
   }
 }
 
+/* Sparkline */
 /* Sparkline */
 .sparkline {
   text-align: center;

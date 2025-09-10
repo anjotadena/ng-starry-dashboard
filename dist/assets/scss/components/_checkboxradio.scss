@@ -1,10 +1,4 @@
-﻿/*
- *  Document   : _checkboxradio.scss
- *  Author     : RedStar Template
- *  Description: This scss file for checkbox and radio button style classes
- */
-
-@use '../common/variables' as v;
+﻿@use '../common/variables' as v;
 
 [type="checkbox"] {
   +label {

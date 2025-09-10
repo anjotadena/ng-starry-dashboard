@@ -1,8 +1,4 @@
-﻿/*
- *  Document   : _formwizard.scss
- *  Author     : RedStar Template
- *  Description: This scss file for wizard style classes
- */
+﻿
 
 .wizard,
 .tabcontrol {
@@ -28,6 +24,7 @@
   display: block;
   padding: 0;
 }
+/* Accessibility */
 /* Accessibility */
 .wizard > .steps .current-info,
 .tabcontrol > .steps .current-info,

@@ -1,8 +1,4 @@
-﻿/*
- *  Document   : _panels.scss
- *  Author     : RedStar Template
- *  Description: This scss file for panels style classes
- */
+﻿
 .panel-group {
   @each $key, $val in $colors {
     .panel-col-#{$key} {
