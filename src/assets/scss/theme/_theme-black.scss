@@ -3,7 +3,7 @@
  *  Author     : RedStar Template
  *  Description: This scss file for black theme style classes
  */
-@import "_theme-color-variables";
+@use "_theme-color-variables";
 
 .theme-black {
   .navbar {
@@ -46,18 +46,18 @@
   }
 
   .navbar-brand {
-    color: $theme-black-navbar-brand;
+    color: theme-color-variables.$theme-black-navbar-brand;
 
     &:hover {
-      color: $theme-black-navbar-brand_hover;
+      color: theme-color-variables.$theme-black-navbar-brand_hover;
     }
 
     &:active {
-      color: $theme-black-navbar-brand_active;
+      color: theme-color-variables.$theme-black-navbar-brand_active;
     }
 
     &:focus {
-      color: $theme-black-navbar-brand_focus;
+      color: theme-color-variables.$theme-black-navbar-brand_focus;
     }
   }
 
@@ -65,12 +65,12 @@
     > li {
       > a {
         &:hover {
-          background-color: $theme-black-nav-anchor_hover;
+          background-color: theme-color-variables.$theme-black-nav-anchor_hover;
           text-decoration: none;
         }
 
         &:focus {
-          background-color: $theme-black-nav-anchor_focus;
+          background-color: theme-color-variables.$theme-black-nav-anchor_focus;
           text-decoration: none;
         }
       }
@@ -78,21 +78,21 @@
 
     .open {
       > a {
-        background-color: $theme-black-nav-anchor-opened;
+        background-color: theme-color-variables.$theme-black-nav-anchor-opened;
 
         &:hover {
-          background-color: $theme-black-nav-anchor-opened_hover;
+          background-color: theme-color-variables.$theme-black-nav-anchor-opened_hover;
         }
 
         &:focus {
-          background-color: $theme-black-nav-anchor-opened_focus;
+          background-color: theme-color-variables.$theme-black-nav-anchor-opened_focus;
         }
       }
     }
   }
 
   .bars {
-    color: $theme-black-bar;
+    color: theme-color-variables.$theme-black-bar;
   }
 
   .sidebar {
@@ -100,7 +100,7 @@
       .list {
         li {
           &.active {
-            background-color: $theme-black-menu-list-active;
+            background-color: theme-color-variables.$theme-black-menu-list-active;
           }
 
           a {
@@ -118,7 +118,7 @@
             }
 
             &:hover {
-              color: $theme-black-sidebar-menu-hover;
+              color: theme-color-variables.$theme-black-sidebar-menu-hover;
               // i,
               // span {
               //   color: $theme-black-sidebar-menu-hover;
@@ -128,74 +128,74 @@
         }
 
         .ml-menu {
-          background-color: $theme-black-menu-list-submenu;
+          background-color: theme-color-variables.$theme-black-menu-list-submenu;
         }
       }
     }
 
     .legal {
-      background-color: $theme-black-legal-bg;
+      background-color: theme-color-variables.$theme-black-legal-bg;
 
       .copyright {
         a {
-          color: $theme-black !important;
+          color: theme-color-variables.$theme-black !important;
         }
       }
     }
   }
 
   .breadcrumb li a {
-    color: $theme-black !important;
+    color: theme-color-variables.$theme-black !important;
   }
 
   .page-item.active .page-link {
-    background-color: $theme-black;
-    border-color: $theme-black;
+    background-color: theme-color-variables.$theme-black;
+    border-color: theme-color-variables.$theme-black;
     color: #ffffff;
     border-radius: 50%;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
   }
 
   .btn-primary {
-    background-color: $theme-black-button-color !important;
+    background-color: theme-color-variables.$theme-black-button-color !important;
     color: #fff !important;
-    border-color: $theme-black !important;
+    border-color: theme-color-variables.$theme-black !important;
 
     &:hover {
-      background-color: $theme-black !important;
+      background-color: theme-color-variables.$theme-black !important;
       color: #fff !important;
     }
 
     &:active {
-      background-color: $theme-black !important;
+      background-color: theme-color-variables.$theme-black !important;
       color: #fff !important;
     }
 
     &:focus {
-      background-color: $theme-black !important;
+      background-color: theme-color-variables.$theme-black !important;
       color: #fff !important;
     }
 
     &:disabled {
-      background-color: $theme-black !important;
+      background-color: theme-color-variables.$theme-black !important;
       color: #fff !important;
     }
   }
 
   .btn-outline-primary {
     background: 0 0 !important;
-    color: $theme-black !important;
-    border: 1px solid $theme-black !important;
+    color: theme-color-variables.$theme-black !important;
+    border: 1px solid theme-color-variables.$theme-black !important;
 
     &:hover {
-      background: $theme-black !important;
+      background: theme-color-variables.$theme-black !important;
       color: #fff !important;
-      border: 1px solid $theme-black !important;
+      border: 1px solid theme-color-variables.$theme-black !important;
     }
   }
 
   .timelineLabelColor strong {
-    color: $theme-black !important;
+    color: theme-color-variables.$theme-black !important;
   }
 
   .top-sidebar {
@@ -203,7 +203,7 @@
       li {
         &.active {
           > a {
-            color: $theme-black;
+            color: theme-color-variables.$theme-black;
           }
         }
 
@@ -214,7 +214,7 @@
           transition: all 0.3s;
 
           &:hover {
-            color: $theme-black;
+            color: theme-color-variables.$theme-black;
           }
         }
       }
@@ -222,7 +222,7 @@
   }
 
   .nav-tabs > li > a:before {
-    border-bottom: 2px solid $theme-black;
+    border-bottom: 2px solid theme-color-variables.$theme-black;
   }
 }
 

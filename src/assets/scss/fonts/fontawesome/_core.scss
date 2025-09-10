@@ -1,7 +1,8 @@
+@use "variables" as v;
 // Base Class Definition
 // -------------------------
 
-.#{$fa-css-prefix},
+.#{v.$fa-css-prefix},
 .fas,
 .far,
 .fal,
@@ -14,8 +15,4 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-}
-
-%fa-icon {
-  @include fa-icon;
 }

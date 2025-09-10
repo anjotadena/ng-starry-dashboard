@@ -1,8 +1,6 @@
-/*
- *  Document   : _leftsidebaroverlay.scss
- *  Author     : RedStar Template
- *  Description: This scss file for left side bar style classes
- */
+@use "../common/variables" as v;
+@use "../common/mixins" as m;
+
 .overlay {
   position: fixed;
   cursor: pointer;
@@ -22,8 +20,8 @@
 }
 
 .sidebar {
-  @include transition(all 0.5s);
-  font-family: $sidebar-font-family;
+  @include m.transition(all 0.5s);
+  font-family: v.$sidebar-font-family;
   background: #ffffff;
   width: 260px;
   overflow: hidden;
@@ -49,7 +47,7 @@
       display: inline-block;
 
       img {
-        @include border-radius(50%);
+        @include m.border-radius(50%);
         vertical-align: bottom !important;
       }
     }
@@ -61,14 +59,14 @@
       top: 25px;
 
       .name {
-        @include three-dots-overflow();
+        @include m.three-dots-overflow();
         font-size: 14px;
         max-width: 200px;
         color: #fff;
       }
 
       .email {
-        @include three-dots-overflow();
+        @include m.three-dots-overflow();
         font-size: 12px;
         max-width: 200px;
         color: #fff;
@@ -78,7 +76,7 @@
         position: absolute;
         right: -3px;
         bottom: -12px;
-        @include box-shadow(none);
+        @include m.box-shadow(none);
         cursor: pointer;
         color: #fff;
       }
@@ -173,8 +171,8 @@
           top: calc(50% - 13px);
           right: 17px;
           font-size: 19px;
-          @include transform(scale(0));
-          @include transition(all 0.3s);
+          @include m.transform(scale(0));
+          @include m.transition(all 0.3s);
         }
 
         &:before {
@@ -184,7 +182,7 @@
           font-weight: 600;
           font-size: 12px;
           color: gray;
-          @include transform(scale(1));
+          @include m.transform(scale(1));
         }
 
         &:after {
@@ -194,7 +192,7 @@
           font-weight: 600;
           font-size: 12px;
           color: gray;
-          @include transform(scale(0));
+          @include m.transform(scale(0));
         }
       }
 
@@ -206,11 +204,11 @@
 
       .active .menu-toggle {
         &:before {
-          @include transform(scale(0));
+          @include m.transform(scale(0));
         }
 
         &:after {
-          @include transform(scale(1));
+          @include m.transform(scale(1));
         }
       }
 
@@ -221,7 +219,7 @@
           top: calc(50% - 13px);
           right: 17px;
           font-size: 19px;
-          @include transition(all 0.3s);
+          @include m.transition(all 0.3s);
         }
 
         &:before {
@@ -230,7 +228,7 @@
           font-weight: 600;
           font-size: 12px;
           color: gray;
-          // @include transform(scale(1));
+          // @include m.transform(scale(1));
         }
 
         &:after {
@@ -240,7 +238,7 @@
           font-size: 12px;
           color: gray;
           // content: "\2013";
-          // @include transform(scale(0));
+          // @include m.transform(scale(0));
         }
       }
       .ml-sub-menu2 {
@@ -250,8 +248,8 @@
           top: calc(50% - 13px);
           right: 17px;
           font-size: 19px;
-          // @include transform(scale(0));
-          @include transition(all 0.3s);
+          // @include m.transform(scale(0));
+          @include m.transition(all 0.3s);
         }
 
         &:before {
@@ -260,7 +258,7 @@
           font-weight: 600;
           font-size: 12px;
           color: gray;
-          // @include transform(scale(1));
+          // @include m.transform(scale(1));
         }
 
         &:after {
@@ -269,7 +267,7 @@
           font-weight: 600;
           font-size: 12px;
           color: gray;
-          // @include transform(scale(0));
+          // @include m.transform(scale(0));
         }
       }
       .ml-sub-menu3 {
@@ -279,8 +277,8 @@
           top: calc(50% - 13px);
           right: 17px;
           font-size: 19px;
-          // @include transform(scale(0));
-          @include transition(all 0.3s);
+          // @include m.transform(scale(0));
+          @include m.transition(all 0.3s);
         }
 
         &:before {
@@ -289,7 +287,7 @@
           font-weight: 600;
           font-size: 12px;
           color: gray;
-          // @include transform(scale(1));
+          // @include m.transform(scale(1));
         }
 
         &:after {
@@ -298,7 +296,7 @@
           font-weight: 600;
           font-size: 12px;
           color: gray;
-          // @include transform(scale(0));
+          // @include m.transform(scale(0));
         }
       }
 
@@ -528,49 +526,49 @@
 .ml-menu {
   .ml-sub-menu {
     &:before {
-      @include transform(scale(1));
+      @include m.transform(scale(1));
     }
     &:after {
-      @include transform(scale(0));
+      @include m.transform(scale(0));
     }
   }
 
   .ml-sub-menu2 {
     &:before {
-      @include transform(scale(1));
+      @include m.transform(scale(1));
     }
     &:after {
-      @include transform(scale(0));
+      @include m.transform(scale(0));
     }
   }
 
   .ml-sub-menu3 {
     &:before {
-      @include transform(scale(1));
+      @include m.transform(scale(1));
     }
     &:after {
-      @include transform(scale(0));
+      @include m.transform(scale(0));
     }
   }
 
   .active .ml-sub-menu {
     &:after {
-      @include transform(scale(1));
+      @include m.transform(scale(1));
     }
 
     &:before {
-      @include transform(scale(0));
+      @include m.transform(scale(0));
     }
   }
 
   .ml-menu-2 {
     li.active .ml-sub-menu2 {
       &:after {
-        @include transform(scale(1));
+        @include m.transform(scale(1));
       }
 
       &:before {
-        @include transform(scale(0));
+        @include m.transform(scale(0));
       }
     }
   }
@@ -578,11 +576,11 @@
   .ml-menu-3 {
     li.active .ml-sub-menu3 {
       &:after {
-        @include transform(scale(1));
+        @include m.transform(scale(1));
       }
 
       &:before {
-        @include transform(scale(0));
+        @include m.transform(scale(0));
       }
     }
   }
@@ -595,9 +593,9 @@
   top: 60px;
   background: #fdfdfd;
   z-index: 999 !important;
-  @include box-shadow(-2px 2px 5px rgba(0, 0, 0, 0.1));
+  @include m.box-shadow(-2px 2px 5px rgba(0, 0, 0, 0.1));
   overflow: hidden;
-  @include transition(0.5s);
+  @include m.transition(0.5s);
 
   &.open {
     right: 0;

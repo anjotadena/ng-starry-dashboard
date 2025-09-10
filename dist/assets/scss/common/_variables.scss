@@ -1,3 +1,4 @@
+@use "sass:map";
 $colors: (
   "red": #f44336,
   "pink": #e91e63,
@@ -14,6 +15,19 @@ $colors: (
   "grey": #9e9e9e,
   "black": #000000,
   "white": #ffffff,
+  "fontdark": #334155,
+  "primary": #4051ef,
+  "secondary": #8391a2,
+  "success": #20bf6b,
+  "danger": #ff5722,
+  "warning": #ff9800,
+  "info": #2196f3,
+  "light": #f8f9fa,
+  "dark": #495057,
+  "gray": #6c757d,
+  "gray-dark": #343a40,
+  "body-color": #8391a2,
+  "muted": #8391a2,
 ) !default;
 
 $linear-colors: (
@@ -30,5 +44,10 @@ $linear-colors: (
 );
 
 //Fonts Family
-$navbar-font-family: "Roboto", sans-serif;
-$sidebar-font-family: "Roboto", sans-serif;
+$navbar-font-family: "Roboto", sans-serif !default;
+$sidebar-font-family: "Roboto", sans-serif !default;
+
+// Function to get colors from the map using old Sass syntax
+@function color($key) {
+  @return map.get($colors, $key);
+}

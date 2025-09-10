@@ -3,8 +3,12 @@
  *  Author     : RedStar Template
  *  Description: This scss file for dropdown menu style classes
  */
+
+@use "../common/variables" as v;
+@use "../common/mixins" as m;
+
 .dropdown-menu {
-  @include border-radius(0);
+  @include m.border-radius(0);
   margin-top: -35px !important;
   margin-left: -15px;
   -webkit-box-shadow: 0 5px 15px 2px rgba(64, 70, 74, 0.2) !important;
@@ -46,7 +50,7 @@
     > a {
       padding: 7px 18px;
       color: #666;
-      @include transition(all 0.5s);
+      @include m.transition(all 0.5s);
       font-size: 14px;
       line-height: 25px;
       display: block;
@@ -130,7 +134,7 @@
       button {
         padding: 11px 11px;
         text-decoration: none;
-        @include transition(0.5s);
+        @include m.transition(0.5s);
         float: left;
         width: 100%;
         height: 65px;
@@ -166,7 +170,7 @@
       .icon-circle {
         width: 36px;
         height: 36px;
-        @include border-radius(50%);
+        @include m.border-radius(50%);
         color: #fff;
         text-align: center;
         display: inline-block;
@@ -181,7 +185,7 @@
       .msg-user {
         width: 44px;
         height: 44px;
-        @include border-radius(50%);
+        @include m.border-radius(50%);
         color: #fff;
         text-align: center;
         display: inline-block;

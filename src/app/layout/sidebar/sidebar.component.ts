@@ -27,7 +27,6 @@ import { MatButtonModule } from '@angular/material/button';
     RouterLink,
     MatButtonModule,
     MatIconModule,
-    NgStyle,
     NgScrollbar,
     RouterLinkActive,
     NgClass,

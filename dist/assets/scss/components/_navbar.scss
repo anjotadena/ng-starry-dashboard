@@ -3,11 +3,15 @@
  *  Author     : RedStar Template
  *  Description: This scss file for navbar style classes
  */
+
+@use '../common/variables' as v;
+@use '../common/mixins' as m;
+
 .navbar {
-  font-family: $navbar-font-family;
-  @include border-radius(0);
+  font-family: v.$navbar-font-family;
+  @include m.border-radius(0);
   box-shadow: none;
-  //    @include box-shadow(0px 0px 20px 0px rgba(0,0,0,0.15));
+  //    @include m.box-shadow(0px 0px 20px 0px rgba(0,0,0,0.15));
   border: none;
   position: fixed;
   top: 0;
@@ -16,7 +20,7 @@
   padding: 0;
 
   .navbar-brand {
-    @include three-dots-overflow();
+    @include m.three-dots-overflow();
   }
 
   .navbar-custom-right-menu {
@@ -96,18 +100,18 @@
       top: 0px;
       line-height: 60px;
       margin-right: 10px;
-      @include transform(scale(0));
-      @include transition(all 0.3s);
+      @include m.transform(scale(0));
+      @include m.transition(all 0.3s);
     }
 
     &:before {
       content: "\E5D2";
-      @include transform(scale(1));
+      @include m.transform(scale(1));
     }
 
     // &:after {
     //   content: "\E5C4";
-    //   @include transform(scale(0));
+    //   @include m.transform(scale(0));
     // }
   }
 
@@ -119,11 +123,11 @@
 .overlay-open {
   .bars {
     &:before {
-      @include transform(scale(0));
+      @include m.transform(scale(0));
     }
 
     &:after {
-      @include transform(scale(1));
+      @include m.transform(scale(1));
     }
   }
   &.ls-closed {
@@ -138,7 +142,7 @@
   background-color: #000;
   width: 260px;
   float: left;
-  @include transition(all 0.5s);
+  @include m.transition(all 0.5s);
 
   .bars {
     float: left;
@@ -464,11 +468,11 @@ nav.navbar {
   top: 0;
 }
 
-@each $key, $val in $colors {
+@each $key, $val in v.$colors {
   .col-#{$key} {
     .navbar {
-      @include navbar-link-color(#fff, #000, 0.95);
-      // @include navbar-link-color(rgba(0,0,0,0.85), #000, .95);
+      @include m.navbar-link-color(#fff, #000, 0.95);
+      // @include m.navbar-link-color(rgba(0,0,0,0.85), #000, .95);
     }
   }
 }
@@ -556,7 +560,7 @@ nav.navbar {
                 font-size: 12px;
                 color: gray;
                 top: calc(50% - 7px);
-                @include transform(scale(1));
+                @include m.transform(scale(1));
               }
               &:after {
                 content: "\f078";
@@ -565,7 +569,7 @@ nav.navbar {
                 font-weight: 600;
                 font-size: 12px;
                 color: gray;
-                @include transform(scale(0));
+                @include m.transform(scale(0));
               }
             }
             span {
@@ -614,11 +618,11 @@ nav.navbar {
           }
           .active .menu-toggle {
             &:before {
-              @include transform(scale(0));
+              @include m.transform(scale(0));
             }
 
             &:after {
-              @include transform(scale(1));
+              @include m.transform(scale(1));
             }
           }
         }

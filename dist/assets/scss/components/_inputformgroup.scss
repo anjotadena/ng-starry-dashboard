@@ -3,6 +3,8 @@
  *  Author     : RedStar Template
  *  Description: This scss file for input form style classes
  */
+@use "../common/variables" as v;
+@use "../common/mixins" as m;
 %extend_check {
   font-size: 13px;
   line-height: 1.42857;
@@ -27,8 +29,8 @@
       left: 0;
       width: 100%;
       bottom: 0px;
-      @include transform(scaleX(0));
-      @include transition(0.25s ease-in);
+      @include m.transform(scaleX(0));
+      @include m.transition(0.25s ease-in);
       border-bottom: 2px solid #1f91f3;
     }
 
@@ -73,7 +75,7 @@
 
   .form-line.focused {
     &:after {
-      @include transform(scaleX(1));
+      @include m.transform(scaleX(1));
     }
 
     .form-label {
@@ -107,7 +109,7 @@
 
   .form-control {
     &:focus {
-      @include box-shadow(none !important);
+      @include m.box-shadow(none !important);
     }
   }
 }
@@ -175,7 +177,7 @@
     /*    border: none; */
     box-shadow: none;
     /*    border-bottom: 1px solid #9e9e9e;*/
-    @include border-radius(0);
+    @include m.border-radius(0);
     padding-left: 0;
   }
 
@@ -211,8 +213,8 @@
       width: 100%;
       height: 0;
       bottom: -1px;
-      @include transform(scaleX(0));
-      @include transition(0.25s ease-in);
+      @include m.transform(scaleX(0));
+      @include m.transition(0.25s ease-in);
       border-bottom: 2px solid #1f91f3;
     }
 
@@ -223,7 +225,7 @@
       top: 10px;
       left: 0;
       cursor: text;
-      @include transition(0.2s);
+      @include m.transition(0.2s);
     }
   }
 
@@ -247,7 +249,7 @@
 
   .form-line.focused {
     &:after {
-      @include transform(scaleX(1));
+      @include m.transform(scaleX(1));
     }
 
     .form-label {

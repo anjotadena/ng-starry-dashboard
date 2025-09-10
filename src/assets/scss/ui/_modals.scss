@@ -3,6 +3,9 @@
  *  Author     : RedStar Template
  *  Description: This scss file for modals style classes
  */
+
+@use '../common/variables' as v;
+
 .modal {
   background-color: rgba(238, 238, 238, 0.41);
   //padding: 100px 0 0;
@@ -76,7 +79,7 @@
   position: absolute !important;
 }
 
-@each $key, $val in $colors {
+@each $key, $val in v.$colors {
   .modal-col-#{$key} {
     background-color: $val;
 

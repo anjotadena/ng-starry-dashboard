@@ -1,10 +1,7 @@
-﻿/*
- *  Document   : _dialogs.scss
- *  Author     : RedStar Template
- *  Description: This scss file for dialogs style classes
- */
+﻿@use '../common/mixins' as m;
+
 .sweet-alert {
-  @include border-radius(0 !important);
+  @include m.border-radius(0 !important);
 
   p {
     font-size: 14px !important;
@@ -23,7 +20,7 @@
 
   button {
     font-size: 15px !important;
-    @include border-radius(0 !important);
+    @include m.border-radius(0 !important);
     padding: 5px 20px !important;
   }
 }

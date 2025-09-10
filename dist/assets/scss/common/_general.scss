@@ -4,6 +4,8 @@
  *  Description: This scss file for all common style classes
  */
 
+@use "mixins" as *;
+
 body {
   @include transition(all 0.5s);
   background-color: #f0eff3;

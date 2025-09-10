@@ -1,8 +1,4 @@
-﻿/*
- *  Document   : _formwizard.scss
- *  Author     : RedStar Template
- *  Description: This scss file for wizard style classes
- */
+﻿@use "../common/mixins" as m;
 
 .wizard,
 .tabcontrol {
@@ -201,7 +197,7 @@
         display: block;
         padding: 0.5em 1em;
         text-decoration: none;
-        @include border-radius(0);
+        @include m.border-radius(0);
 
         &:hover,
         &:active {
@@ -210,7 +206,7 @@
           display: block;
           padding: 0.5em 1em;
           text-decoration: none;
-          @include border-radius(0);
+          @include m.border-radius(0);
         }
       }
 
@@ -315,7 +311,7 @@
 .wizard {
   .content {
     min-height: 245px;
-    @include border-radius(0);
+    @include m.border-radius(0);
     overflow-y: auto;
 
     .body {
@@ -325,13 +321,13 @@
 
   .steps {
     a {
-      @include border-radius(0);
-      @include transition(0.5s);
+      @include m.border-radius(0);
+      @include m.transition(0.5s);
 
       &:active,
       &:focus,
       &:hover {
-        @include border-radius(0);
+        @include m.border-radius(0);
       }
     }
 

@@ -3,9 +3,12 @@
  *  Author     : RedStar Template
  *  Description: This scss file for alert style classes
  */
+
+@use '../common/mixins' as m;
+
 .alert {
-  @include border-radius(0);
-  @include box-shadow(none);
+  @include m.border-radius(0);
+  @include m.box-shadow(none);
   border: none;
   color: #fff !important;
 

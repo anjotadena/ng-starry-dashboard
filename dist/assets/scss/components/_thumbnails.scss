@@ -1,10 +1,7 @@
-﻿/*
- *  Document   : _thumbnail.scss
- *  Author     : RedStar Template
- *  Description: This scss file for thumbnail style classes
- */
+﻿@use "../common/mixins" as m;
+
 .thumbnail {
-  @include border-radius(0);
+  @include m.border-radius(0);
 
   p:not(button) {
     color: #999999;

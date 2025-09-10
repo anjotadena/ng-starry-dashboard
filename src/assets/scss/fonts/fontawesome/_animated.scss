@@ -1,11 +1,13 @@
+@use 'variables' as v;
+
 // Animated Icons
 // --------------------------
 
-.#{$fa-css-prefix}-spin {
+.#{v.$fa-css-prefix}-spin {
   animation: fa-spin 2s infinite linear;
 }
 
-.#{$fa-css-prefix}-pulse {
+.#{v.$fa-css-prefix}-pulse {
   animation: fa-spin 1s infinite steps(8);
 }
 

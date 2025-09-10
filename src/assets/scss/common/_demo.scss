@@ -1,23 +1,5 @@
-/*
- *  Document   : _demo.scss
- *  Author     : RedStar Template
- *  Description: This scss file style classes of following components
-
-            Structure (with shortcodes):
-
-            1. BUTTONS
-            2. CHECKBOX & RADIO
-            3. JQUERY KNOB-CHART
-            4. SWITCH
-            5. COLOR BOX
-            6. IMAGES
-            7. TAGS INPUT
-            8. GOOGLE MATERIAL DESIGN ICON
-            9. PRELOADER
-            10. ION RANGE SLIDER
-            11. RIGHT SIDEBAR
-        
- */
+@use "/src/assets/scss/common/mixins" as m;
+@use "/src/assets/scss/common/variables" as c;
 
 /***********************************************************************
 
@@ -160,7 +142,7 @@
   padding: 15px 0;
   text-align: center;
   margin-bottom: 20px;
-  @include border-radius(3px);
+  @include m.border-radius(3px);
 
   .color-name {
     font-size: 16px;
@@ -321,7 +303,7 @@
       width: 24px;
       height: 24px;
       display: inline-block;
-      @include border-radius(3px);
+      @include m.border-radius(3px);
     }
 
     span {
@@ -352,7 +334,7 @@
     background-color: #f06533;
   }
 
-  @each $key, $val in $colors {
+  @each $key, $val in c.$colors {
     .#{$key} {
       background-color: $val;
     }

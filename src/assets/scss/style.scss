@@ -16,92 +16,91 @@
                 
 /*                 [1. Common ]                   			*/
 
-/* Importing Bootstrap SCSS file. */
-@import "common/_variables";
-@import "common/_mixins";
-@import "common/_customanimate.scss";
-@import "common/_general.scss";
-@import "common/_demo.scss";
-@import "common/_helpers.scss";
-@import "common/_media.scss";
-@import "common/_animation.scss";
-@import "common/_rtl.scss";
+@forward "common/_variables.scss";
+@forward "common/_customanimate.scss";
+@forward "common/_mixins.scss";
+@forward "common/_general.scss";
+@forward "common/_demo.scss";
+@forward "common/_helpers.scss";
+@forward "common/_media.scss";
+@forward "common/_animation.scss";
+@forward "common/_rtl.scss";
 
 /*                 [2. Fonts]                   				*/
 // @import "fonts/_material.scss";
-@import "fonts/fontawesome/fontawesome.scss";
-@import "fonts/fontawesome/regular.scss";
-@import "fonts/fontawesome/solid.scss";
-@import "fonts/fontawesome/brands.scss";
+@forward "fonts/fontawesome/fontawesome.scss";
+@forward "fonts/fontawesome/regular.scss";
+@forward "fonts/fontawesome/solid.scss";
+@forward "fonts/fontawesome/brands.scss";
 
 /*                 [3. Components ]                   		*/
-@import "components/_breadcrumbs.scss";
-@import "components/_checkboxradio.scss";
-@import "components/_dropdownmenu.scss";
-@import "components/_feed.scss";
-@import "components/_formcomponents.scss";
-@import "components/_infobox.scss";
-@import "components/_inputformgroup.scss";
-@import "components/_labels.scss";
-@import "components/_leftsidebaroverlay.scss";
-@import "components/_navbar";
-@import "components/_navtabs.scss";
-@import "components/_noticeboard.scss";
-@import "components/_rightsidebar.scss";
-@import "components/_searchbar.scss";
-@import "components/_switch.scss";
-@import "components/_thumbnails.scss";
-@import "components/_todo.scss";
-@import "components/_settingSidebar.scss";
+@forward "components/_breadcrumbs.scss";
+@forward "components/_checkboxradio.scss";
+@forward "components/_dropdownmenu.scss";
+@forward "components/_feed.scss";
+@forward "components/_formcomponents.scss";
+@forward "components/_infobox.scss";
+@forward "components/_inputformgroup.scss";
+@forward "components/_labels.scss";
+@forward "components/_leftsidebaroverlay.scss";
+@forward "components/_navbar";
+@forward "components/_navtabs.scss";
+@forward "components/_noticeboard.scss";
+@forward "components/_rightsidebar.scss";
+@forward "components/_searchbar.scss";
+@forward "components/_switch.scss";
+@forward "components/_thumbnails.scss";
+@forward "components/_todo.scss";
+@forward "components/_settingSidebar.scss";
 
 /*                 [4. Apps]                   				*/
-@import "apps/_calendar.scss";
-@import "apps/_chat.scss";
-@import "apps/_contactlist.scss";
-@import "apps/_contactgrid.scss";
-@import "apps/_dragdrop.scss";
-@import "apps/_task.scss";
+@forward "apps/_calendar.scss";
+@forward "apps/_chat.scss";
+@forward "apps/_contactlist.scss";
+@forward "apps/_contactgrid.scss";
+@forward "apps/_dragdrop.scss";
+@forward "apps/_task.scss";
 
 /*                 [5. Pages ]                   				*/
-@import "pages/_dashboard.scss";
-@import "pages/_inbox.scss";
-@import "pages/_pricing.scss";
-@import "pages/_profile.scss";
-@import "pages/_timeline.scss";
-@import "pages/_projects.scss";
+@forward "pages/_dashboard.scss";
+@forward "pages/_inbox.scss";
+@forward "pages/_pricing.scss";
+@forward "pages/_profile.scss";
+@forward "pages/_timeline.scss";
+@forward "pages/_projects.scss";
 // @import "pages/_extra_pages.scss";
-@import "pages/_auth.scss";
+@forward "pages/_auth.scss";
 
 /*                 [6. Pugins ]                   				*/
-@import "plugins/_carousel.scss";
-@import "plugins/_charts.scss";
-@import "plugins/_formwizard.scss";
-@import "plugins/_imagegallery.scss";
-@import "plugins/_maps.scss";
-@import "plugins/_tables.scss";
+@forward "plugins/_carousel.scss";
+@forward "plugins/_charts.scss";
+@forward "plugins/_formwizard.scss";
+@forward "plugins/_imagegallery.scss";
+@forward "plugins/_maps.scss";
+@forward "plugins/_tables.scss";
 
 /*                 [7. UI ]                   */
-@import "ui/_alerts.scss";
-@import "ui/_badgelistgroupitem.scss";
-@import "ui/_buttons.scss";
-@import "ui/_card.scss";
-@import "ui/_collapse.scss";
-@import "ui/_dialogs.scss";
-@import "ui/_expansion.scss";
-@import "ui/_mediaobject.scss";
-@import "ui/_modals.scss";
-@import "ui/_pageloader.scss";
-@import "ui/_pagination.scss";
-@import "ui/_panels.scss";
-@import "ui/_preloaders.scss";
-@import "ui/_progressbars.scss";
-@import "ui/_slider.scss";
-@import "ui/_snackbar.scss";
-@import "ui/_tabs.scss";
-@import "ui/_tooltippopovers.scss";
-@import "ui/_ckeditor.scss";
-@import "ui/_listitems.scss";
+@forward "ui/_alerts.scss";
+@forward "ui/_badgelistgroupitem.scss";
+@forward "ui/_buttons.scss";
+@forward "ui/_card.scss";
+@forward "ui/_collapse.scss";
+@forward "ui/_dialogs.scss";
+@forward "ui/_expansion.scss";
+@forward "ui/_mediaobject.scss";
+@forward "ui/_modals.scss";
+@forward "ui/_pageloader.scss";
+@forward "ui/_pagination.scss";
+@forward "ui/_panels.scss";
+@forward "ui/_preloaders.scss";
+@forward "ui/_progressbars.scss";
+@forward "ui/_slider.scss";
+@forward "ui/_snackbar.scss";
+@forward "ui/_tabs.scss";
+@forward "ui/_tooltippopovers.scss";
+@forward "ui/_ckeditor.scss";
+@forward "ui/_listitems.scss";
 
 /*                 [8. Browser ]                   			*/
-@import "browser/_ie10.scss";
-@import "browser/_ie11.scss";
+@forward "browser/_ie10.scss";
+@forward "browser/_ie11.scss";

@@ -3,6 +3,9 @@
  *  Author     : RedStar Template
  *  Description: This scss file switch button style classes
  */
+
+@use '../common/variables' as v;
+
 .switch {
   label {
     font-weight: normal;
@@ -14,7 +17,7 @@
 
     input[type="checkbox"] {
       &:checked {
-        @each $key, $val in $colors {
+        @each $key, $val in v.$colors {
           &:not(:disabled) {
             ~ .lever.switch-col-#{$key} {
               &:active {

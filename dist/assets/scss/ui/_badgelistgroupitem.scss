@@ -1,8 +1,12 @@
 ﻿/*
- *  Document   : badgelistgroupitem.scss
+ *  Document   : _badgelistgroupitem.scss
  *  Author     : RedStar Template
- *  Description: This scss file for badge style classes
+ *  Description: This scss file for badge list group style classes
  */
+
+@use '../common/variables' as v;
+@use '../common/mixins' as m;
+
 .badge {
   padding: 5px 8px;
   line-height: 12px;
@@ -12,8 +16,8 @@
 }
 
 .list-group-item {
-  @include border-radius(0);
-  @include transition(0.5s);
+  @include m.border-radius(0);
+  @include m.transition(0.5s);
 }
 
 .list-group {
@@ -63,7 +67,7 @@
   .list-group-item {
     &:first-child,
     &:last-child {
-      @include border-radius(0);
+      @include m.border-radius(0);
     }
 
     .list-group-item-heading {
@@ -129,7 +133,7 @@
     }
   }
 
-  @each $key, $val in $colors {
+  @each $key, $val in v.$colors {
     .pl-#{$key} {
       stroke: $val;
     }

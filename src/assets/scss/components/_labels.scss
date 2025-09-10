@@ -3,8 +3,11 @@
  *  Author     : RedStar Template
  *  Description: This scss file for label style classes
  */
+@use "../common/variables" as v;
+@use "../common/mixins" as m;
+
 .label {
-  @include border-radius(10px);
+  @include m.border-radius(10px);
   padding: 2px 10px;
   color: #fff;
   display: inline-block;

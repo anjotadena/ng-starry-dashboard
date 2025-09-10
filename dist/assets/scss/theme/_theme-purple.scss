@@ -3,7 +3,7 @@
  *  Author     : RedStar Template
  *  Description: This scss file for purple theme style classes
  */
-@import "_theme-color-variables";
+@use "_theme-color-variables";
 
 .theme-purple {
   .navbar {
@@ -48,12 +48,12 @@
     > li {
       > a {
         &:hover {
-          background-color: $theme-purple-nav-anchor_hover;
+          background-color: theme-color-variables.$theme-purple-nav-anchor_hover;
           text-decoration: none;
         }
 
         &:focus {
-          background-color: $theme-purple-nav-anchor_focus;
+          background-color: theme-color-variables.$theme-purple-nav-anchor_focus;
           text-decoration: none;
         }
       }
@@ -61,7 +61,7 @@
   }
 
   .bars {
-    color: $theme-purple-bar;
+    color: theme-color-variables.$theme-purple-bar;
   }
 
   .sidebar {
@@ -69,7 +69,7 @@
       .list {
         li {
           &.active {
-            background-color: $theme-purple-menu-list-active;
+            background-color: theme-color-variables.$theme-purple-menu-list-active;
           }
           a {
             -moz-transition: all 0.3s;
@@ -87,74 +87,74 @@
         }
 
         .ml-menu {
-          background-color: $theme-purple-menu-list-submenu;
+          background-color: theme-color-variables.$theme-purple-menu-list-submenu;
         }
       }
     }
 
     .legal {
-      background-color: $theme-purple-legal-bg;
+      background-color: theme-color-variables.$theme-purple-legal-bg;
 
       .copyright {
         a {
-          color: $theme-purple !important;
+          color: theme-color-variables.$theme-purple !important;
         }
       }
     }
   }
 
   .breadcrumb li a {
-    color: $theme-purple !important;
+    color: theme-color-variables.$theme-purple !important;
   }
 
   .page-item.active .page-link {
-    background-color: $theme-purple;
-    border-color: $theme-purple;
+    background-color: theme-color-variables.$theme-purple;
+    border-color: theme-color-variables.$theme-purple;
     color: #ffffff;
     border-radius: 50%;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
   }
 
   .btn-primary {
-    background-color: $theme-purple !important;
+    background-color: theme-color-variables.$theme-purple !important;
     color: #fff !important;
-    border-color: $theme-purple !important;
+    border-color: theme-color-variables.$theme-purple !important;
     &:hover {
-      background-color: $theme-purple !important;
+      background-color: theme-color-variables.$theme-purple !important;
       color: #fff !important;
     }
     &:active {
-      background-color: $theme-purple !important;
+      background-color: theme-color-variables.$theme-purple !important;
       color: #fff !important;
     }
     &:focus {
-      background-color: $theme-purple !important;
+      background-color: theme-color-variables.$theme-purple !important;
       color: #fff !important;
     }
     &:disabled {
-      background-color: $theme-purple !important;
+      background-color: theme-color-variables.$theme-purple !important;
       color: #fff !important;
     }
   }
   .btn-outline-primary {
     background: 0 0 !important;
-    color: $theme-purple !important;
-    border: 1px solid $theme-purple !important;
+    color: theme-color-variables.$theme-purple !important;
+    border: 1px solid theme-color-variables.$theme-purple !important;
     &:hover {
-      background: $theme-purple !important;
+      background: theme-color-variables.$theme-purple !important;
       color: #fff !important;
-      border: 1px solid $theme-purple !important;
+      border: 1px solid theme-color-variables.$theme-purple !important;
     }
   }
   .timelineLabelColor strong {
-    color: $theme-purple !important;
+    color: theme-color-variables.$theme-purple !important;
   }
   .top-sidebar {
     .horizontal-menu {
       li {
         &.active {
           > a {
-            color: $theme-purple;
+            color: theme-color-variables.$theme-purple;
           }
         }
         a {
@@ -163,7 +163,7 @@
           -webkit-transition: all 0.3s;
           transition: all 0.3s;
           &:hover {
-            color: $theme-purple;
+            color: theme-color-variables.$theme-purple;
           }
         }
       }
@@ -171,12 +171,12 @@
   }
 
   .nav-tabs > li > a:before {
-    border-bottom: 2px solid $theme-purple;
+    border-bottom: 2px solid theme-color-variables.$theme-purple;
   }
 }
 /*Logo Header Background Color*/
 .logo-purple {
   .navbar-header {
-    background-color: $theme-purple;
+    background-color: theme-color-variables.$theme-purple;
   }
 }

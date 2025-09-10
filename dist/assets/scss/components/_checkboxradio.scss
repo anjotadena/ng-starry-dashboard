@@ -3,6 +3,9 @@
  *  Author     : RedStar Template
  *  Description: This scss file for checkbox and radio button style classes
  */
+
+@use '../common/variables' as v;
+
 [type="checkbox"] {
   +label {
     padding-left: 26px;
@@ -25,7 +28,7 @@
   }
 
   @each $key,
-  $val in $colors {
+  $val in v.$colors {
     &:checked.chk-col-#{$key} {
       +label {
         &:before {
@@ -38,7 +41,7 @@
 }
 
 @each $key,
-$val in $colors {
+$val in v.$colors {
   :checked.chk-col-#{$key} {
     +span {
       &:after {
@@ -68,7 +71,7 @@ $val in $colors {
   }
 
   @each $key,
-  $val in $colors {
+  $val in v.$colors {
     &:checked.chk-col-#{$key} {
       +label {
         &:after {
@@ -107,7 +110,7 @@ $val in $colors {
 }
 
 @each $key,
-$val in $colors {
+$val in v.$colors {
   [type="radio"].radio-col-#{$key} {
     &:checked {
       +label {
@@ -121,7 +124,7 @@ $val in $colors {
 }
 
 @each $key,
-$val in $colors {
+$val in v.$colors {
   [type="radio"].with-gap.radio-col-#{$key} {
     &:checked {
       +label {

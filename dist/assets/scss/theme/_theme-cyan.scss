@@ -3,7 +3,7 @@
  *  Author     : RedStar Template
  *  Description: This scss file for cyan theme style classes
  */
-@import "_theme-color-variables";
+@use "_theme-color-variables";
 
 .theme-cyan {
   .navbar {
@@ -49,12 +49,12 @@
     > li {
       > a {
         &:hover {
-          background-color: $theme-cyan-nav-anchor_hover;
+          background-color: theme-color-variables.$theme-cyan-nav-anchor_hover;
           text-decoration: none;
         }
 
         &:focus {
-          background-color: $theme-cyan-nav-anchor_focus;
+          background-color: theme-color-variables.$theme-cyan-nav-anchor_focus;
           text-decoration: none;
         }
       }
@@ -62,7 +62,7 @@
   }
 
   .bars {
-    color: $theme-cyan-bar;
+    color: theme-color-variables.$theme-cyan-bar;
   }
 
   .sidebar {
@@ -70,7 +70,7 @@
       .list {
         li {
           &.active {
-            background-color: $theme-cyan-menu-list-active;
+            background-color: theme-color-variables.$theme-cyan-menu-list-active;
           }
           a {
             -moz-transition: all 0.3s;
@@ -87,74 +87,74 @@
           }
         }
         .ml-menu {
-          background-color: $theme-cyan-menu-list-submenu;
+          background-color: theme-color-variables.$theme-cyan-menu-list-submenu;
         }
       }
     }
 
     .legal {
-      background-color: $theme-cyan-legal-bg;
+      background-color: theme-color-variables.$theme-cyan-legal-bg;
 
       .copyright {
         a {
-          color: $theme-cyan !important;
+          color: theme-color-variables.$theme-cyan !important;
         }
       }
     }
   }
 
   .breadcrumb li a {
-    color: $theme-cyan !important;
+    color: theme-color-variables.$theme-cyan !important;
   }
 
   .page-item.active .page-link {
-    background-color: $theme-cyan;
-    border-color: $theme-cyan;
+    background-color: theme-color-variables.$theme-cyan;
+    border-color: theme-color-variables.$theme-cyan;
     color: #ffffff;
     border-radius: 50%;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
   }
 
   .btn-primary {
-    background-color: $theme-cyan !important;
+    background-color: theme-color-variables.$theme-cyan !important;
     color: #fff !important;
-    border-color: $theme-cyan !important;
+    border-color: theme-color-variables.$theme-cyan !important;
     &:hover {
-      background-color: $theme-cyan !important;
+      background-color: theme-color-variables.$theme-cyan !important;
       color: #fff !important;
     }
     &:active {
-      background-color: $theme-cyan !important;
+      background-color: theme-color-variables.$theme-cyan !important;
       color: #fff !important;
     }
     &:focus {
-      background-color: $theme-cyan !important;
+      background-color: theme-color-variables.$theme-cyan !important;
       color: #fff !important;
     }
     &:disabled {
-      background-color: $theme-cyan !important;
+      background-color: theme-color-variables.$theme-cyan !important;
       color: #fff !important;
     }
   }
   .btn-outline-primary {
     background: 0 0 !important;
-    color: $theme-cyan !important;
-    border: 1px solid $theme-cyan !important;
+    color: theme-color-variables.$theme-cyan !important;
+    border: 1px solid theme-color-variables.$theme-cyan !important;
     &:hover {
-      background: $theme-cyan !important;
+      background: theme-color-variables.$theme-cyan !important;
       color: #fff !important;
-      border: 1px solid $theme-cyan !important;
+      border: 1px solid theme-color-variables.$theme-cyan !important;
     }
   }
   .timelineLabelColor strong {
-    color: $theme-cyan !important;
+    color: theme-color-variables.$theme-cyan !important;
   }
   .top-sidebar {
     .horizontal-menu {
       li {
         &.active {
           > a {
-            color: $theme-cyan;
+            color: theme-color-variables.$theme-cyan;
           }
         }
         a {
@@ -163,7 +163,7 @@
           -webkit-transition: all 0.3s;
           transition: all 0.3s;
           &:hover {
-            color: $theme-cyan;
+            color: theme-color-variables.$theme-cyan;
           }
         }
       }
@@ -171,12 +171,12 @@
   }
 
   .nav-tabs > li > a:before {
-    border-bottom: 2px solid $theme-cyan;
+    border-bottom: 2px solid theme-color-variables.$theme-cyan;
   }
 }
 /*Logo Header Background Color*/
 .logo-cyan {
   .navbar-header {
-    background-color: $theme-cyan;
+    background-color: theme-color-variables.$theme-cyan;
   }
 }

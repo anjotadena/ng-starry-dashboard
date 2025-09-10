@@ -3,6 +3,10 @@
  *  Author     : RedStar Template
  *  Description: This scss file for card style classes
  */
+
+@use '../common/variables' as v;
+@use '../common/mixins' as m;
+
 .card {
   background: #fff;
   min-height: 50px;
@@ -95,7 +99,7 @@
       i {
         font-size: 20px;
         color: #999;
-        @include transition(all 0.5s);
+        @include m.transition(all 0.5s);
 
         &:hover {
           color: #000;
@@ -172,7 +176,7 @@
   &.card-statistic-1 .card-header h4,
   &.card-statistic-2 .card-header h4 {
     line-height: 1.2;
-    color: color(muted);
+    color: v.color(muted);
   }
 
   &.card-statistic-1 .card-body,
@@ -184,7 +188,7 @@
   &.card-statistic-2 .card-body {
     font-size: 26px;
     font-weight: 700;
-    color: color(fontdark);
+    color: v.color(fontdark);
     padding-bottom: 0;
   }
 

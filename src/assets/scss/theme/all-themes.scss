@@ -14,18 +14,18 @@
  */
 
 /*            [1. Purple Theme]               */
-@import "theme-purple";
+@use "theme-purple";
 /*             [2. Blue Theme]               */
-@import "theme-blue";
+@use "theme-blue";
 /*             [3. Cyan Theme]               */
-@import "theme-cyan";
+@use "theme-cyan";
 /*             [4. Green Theme]               */
-@import "theme-green";
+@use "theme-green";
 /*             [5. Orange Theme]               */
-@import "theme-orange";
+@use "theme-orange";
 /*             [6. Black Theme]               */
-@import "theme-black";
+@use "theme-black";
 /*             [7. White Theme]               */
-@import "theme-white";
+@use "theme-white";
 /*             [8. Dark Template Theme]               */
-@import "dark";
+@use "dark";
